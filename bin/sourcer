@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'sourcer'
+
+Sourcer.new(STDIN, ARGV).run
