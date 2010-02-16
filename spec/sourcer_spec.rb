@@ -4,8 +4,8 @@ require File.join(File.dirname(__FILE__), '..', 'lib', 'sourcer')
 
 describe Sourcer do
   before do
-    stdin   = StringIO.new("http://www.avc.com\n")
-    @source = Sourcer.new(stdin).run
+    argv = ["http://www.avc.com"]
+    @source = Sourcer.new(argv).run
   end
 
   it "should output the iphone body" do

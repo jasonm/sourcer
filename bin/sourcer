@@ -3,4 +3,4 @@
 require 'rubygems'
 require 'sourcer'
 
-Sourcer.new.run
+Sourcer.new(ARGV).run
