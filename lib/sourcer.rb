@@ -8,7 +8,7 @@ class Sourcer
 
     options = OptionParser.new
     options.banner = "Usage: sourcer [options]"
-    options.on('-A', '--user-agent') { self.user_agent = a }
+    options.on('-A', '--user-agent') { |a| self.user_agent = a }
     options.parse!
 
     # maybe this is a hack, maybe it's the right way to do it, i'm not sure...
